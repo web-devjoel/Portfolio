@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamazi's Portfolio</title>
+  <title>Joel's Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <style>
     /* ===== GENERAL ===== */
@@ -272,7 +272,7 @@
 
   <!-- ===== HERO ===== -->
   <section id="home" class="hero">
-    <h1>Hamazi</h1>
+    <h1>Joel</h1>
     <h2>Full Stack Developer | Web3 Builder</h2>
     <p>Designing sleek interfaces, building responsive web apps, and experimenting with blockchain technologies.</p>
     <button id="contactBtn">Contact Me</button>
@@ -281,7 +281,7 @@
   <!-- ===== ABOUT ===== -->
   <section id="about" class="about" data-fade>
     <h3>About Me</h3>
-    <img id="profileImg" src="" alt="Hamazi profile" class="profile-img">
+    <img id="profileImg" src="" alt="Joel's profile" class="profile-img">
     <p>
       I’m a passionate full stack developer focused on creating clean, responsive, and interactive experiences on the web. 
       I love combining design and logic — bringing ideas to life with HTML, CSS, JavaScript, and blockchain integrations. <br><br>
@@ -394,7 +394,7 @@
 
     async function loadGitHubAvatar() {
       try {
-        const res = await fetch('https://api.github.com/users/devhamazi');
+        const res = await fetch('https://api.github.com/users/web-devjoel');
         const data = await res.json();
         document.getElementById('profileImg').src = data.avatar_url;
       } catch (err) {
