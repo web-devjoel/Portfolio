@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,7 +151,7 @@
       margin-top: 10px;
     }
     .hero p { max-width: 700px; color: var(--text-dim); margin-top: 20px; }
-    
+
     #contactBtn {
       position: relative;
       background: var(--primary);
@@ -324,40 +323,41 @@
     </div>
   </section>
 
-  <section id="projects" class="projects" data-fade>
-    <h3 style="text-align: center;">My Projects</h3>
-    <div class="project-grid" id="static-projects">
-      <div class="card">
-        <h4>TON Blog</h4>
-        <p>The Open Network (TON) blockchain blog for beginners understanding.</p>
-        <button onclick="openSafe('ton.html')">View</button>
-      </div>
-      <div class="card">
-        <h4>Kronos IT Support <span style="font-size:0.8rem;color:#bbb;">(Client Project)</span></h4>
-        <p>A professional tech support website built for a client — clean UI and responsive design.</p>
-        <button onclick="openSafe('https://kronositsupport.github.io/KronosITsupport/')">View Site</button>
-      </div>
-      <div class="card">  
-        <h4>Hamazi News <span style="font-size:0.8rem;color:#bbb;">(Client Project)</span></h4>  
-        <p>A clean, modern mini-news platform focused on global and political events.</p>  
-        <button onclick="openSafe('https://web-devjoel.github.io/News/')">Visit Site</button>  
-      </div>  
-      <div class="card">  
-        <h4>GameFi P2E Arena</h4>  
-        <p>A blockchain-based Play-to-Earn battle arena game with token rewards.</p>  
-        <button onclick="openSafe('https://web-devjoel.github.io/RPG-Battle-Arena/')">Play</button>  
-      </div>  
-      <div class="card">  
-        <h4>Online School Portal <span style="font-size:0.8rem;color:#bbb;">(Student Results System)</span></h4>  
-        <p>A web-based results portal for students — allows entering or checking student results online.</p>  
-        <button onclick="openSafe('https://online-school-portal.github.io/BPS/')">Visit Portal</button>  
-      </div> 
-      <div class="card" style="flex-direction:column; justify-content:center; align-items:center;">
-        <div class="spinner"></div>
-        <p style="margin-top:15px; color:#ccc;">More projects loading soon...</p>
+<section id="projects" class="projects" data-fade>
+  <h3 style="text-align: center;">My Projects</h3>
+  <div class="project-grid" id="static-projects">
+    <div class="card">
+      <h4>TON Blog</h4>
+      <p>The Open Network (TON) blockchain blog for beginners understanding.</p>
+      <button onclick="openSafe('ton.html')">View</button>
+    </div>
+    <div class="card">
+      <h4>Kronos IT Support <span style="font-size:0.8rem;color:#bbb;">(Client Project)</span></h4>
+      <p>A professional tech support website built for a client — clean UI and responsive design.</p>
+      <button onclick="openSafe('https://kronositsupport.github.io/KronosITsupport/')">View Site</button>
+    </div>
+    <div class="card">
+      <h4>Hamazi News</h4>
+      <p>A clean, modern mini-news platform focused on global and political events.</p>
+      <button onclick="openSafe('https://web-devjoel.github.io/News/')">Visit Site</button>
+    </div>
+    <div class="card">
+      <h4>Online School Portal <span style="font-size:0.8rem;color:#bbb;">(Student Results System)</span></h4>
+      <p>A web-based results portal for students — allows entering or checking student results online.</p>
+      <button onclick="openSafe('https://online-school-portal.github.io/BPS/')">Visit Portal</button>
+    </div>
+    <!-- Loading Placeholder -->
+    <div class="card" style="flex-direction:column; justify-content:center; align-items:center;">
+      <div class="spinner"></div>
+      <p style="margin-top:15px; color:#ccc;">More projects loading soon...</p>
+      <!-- GameFi P2E Arena moved here -->
+      <div style="text-align:center; margin-top:10px;">
+        <h4>GameFi P2E Arena</h4>
+        <p style="color:#ccc;">A blockchain-based Play-to-Earn battle arena game with token rewards.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="contact" class="contact" data-fade>
     <h3>Contact Me</h3>
@@ -375,7 +375,7 @@
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       document.getElementById("scrollBar").style.width = (winScroll / height) * 100 + "%";
-      
+
       const nav = document.getElementById('navbar');
       if (window.scrollY > 20) nav.classList.add('scrolled');
       else nav.classList.remove('scrolled');
