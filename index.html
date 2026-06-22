@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joel's Portfolio</title>
+  <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
-    /* ===== MODERN THEME VARIABLES ===== */
     :root {
       --primary: #e63946;
       --primary-glow: rgba(230, 57, 70, 0.4);
@@ -37,7 +36,6 @@
       width: 0%;
     }
 
-    /* Fixed Theme Toggle */
     .theme-toggle {
       position: fixed;
       bottom: 30px;
@@ -48,7 +46,7 @@
       background: var(--primary);
       border: none;
       cursor: pointer;
-      z-index: 2001; /* High z-index to stay above everything */
+      z-index: 2001;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -244,7 +242,6 @@
     [data-fade] { opacity: 0; transform: translateY(40px); transition: 0.8s ease-out; }
     [data-fade].visible { opacity: 1; transform: translateY(0); }
 
-    /* INCREASED SOCIAL ICONS & CENTERED CONTACT */
     .contact { text-align: center; }
     .socials { 
       display: flex; 
@@ -253,14 +250,14 @@
       margin-top: 30px; 
     }
     .socials a img { 
-      width: 32px; /* Increased size from 24px */
+      width: 32px;
       height: 32px; 
-      filter: grayscale(1); 
-      transition: 0.3s ease; 
+      filter: grayscale(1);
+      transition: 0.3s ease;
     }
-    .socials a:hover img { 
-      filter: grayscale(0); 
-      transform: scale(1.2); 
+    .socials a:hover img {
+      filter: grayscale(0);
+      transform: scale(1.2);
     }
 
     @media (max-width: 768px) {
@@ -286,9 +283,9 @@
 
   <section id="home" class="hero">
     <div id="particles-js"></div>
-    <h1>Joel</h1>
+    <h1>Dev Joel</h1>
     <h2><span id="typewriter"></span><span class="typing-cursor"></span></h2>
-    <p>Designing sleek interfaces, building responsive web apps, and experimenting with blockchain technologies.</p>
+    <p>Building responsive web apps</p>
     <button id="contactBtn">Contact Me</button>
   </section>
 
@@ -298,28 +295,62 @@
       <img id="profileImg" src="" alt="Joel's profile" class="profile-img" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--primary); margin: 20px 0;">
     </div>
     <p>
-      I’m a passionate full stack developer focused on creating clean, responsive, and interactive experiences on the web. 
-      I love combining design and logic — bringing ideas to life with HTML, CSS, JavaScript, and blockchain integrations. <br><br>
-      On the backend, I work with <strong>Node.js</strong> and <strong>Express.js</strong> to build scalable APIs, while using <strong>React</strong> and <strong>Tailwind CSS</strong> on the frontend to craft modern, responsive interfaces.
+      I’m a full stack developer focused on creating clean, responsive, and interactive experiences on the web. 
+      I love combining design and logic — bringing ideas to life with HTML, CSS, and JavaScript <br><br>
+      On the backend, I work with <strong>Node.js</strong> and <strong>Express.js</strong> to build scalable APIs, while using <strong>HTML</strong> and <strong>CSS</strong> on the frontend to craft modern, responsive interfaces.
     </p>
 
     <div class="skills-container">
       <div class="skill-wrapper">
         <div class="skill-info"><span>Frontend</span><span>70%</span></div>
-        <div class="progress-bg"><div class="progress-fill" data-percent="90%"></div></div>
+        <div class="progress-bg"><div class="progress-fill" data-percent="70%"></div></div>
       </div>
       <div class="skill-wrapper">
         <div class="skill-info"><span>Node.js / Backend</span><span>55%</span></div>
-        <div class="progress-bg"><div class="progress-fill" data-percent="85%"></div></div>
-      </div>
-      <div class="skill-wrapper">
-        <div class="skill-info"><span>Blockchain</span><span>15%</span></div>
-        <div class="progress-bg"><div class="progress-fill" data-percent="75%"></div></div>
+        <div class="progress-bg"><div class="progress-fill" data-percent="55%"></div></div>
       </div>
     </div>
-
-    <div class="skills">
-      <span class="skill-tag">HTML</span> <span class="skill-tag">CSS</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">React</span> <span class="skill-tag">Tailwind CSS</span> <span class="skill-tag">Node.js</span> <span class="skill-tag">Express.js</span> <span class="skill-tag">Next.js</span> <span class="skill-tag">Rest APIs</span> <span class="skill-tag">MongoDB</span> <span class="skill-tag">PostgreSQL</span> <span class="skill-tag">Render</span> <span class="skill-tag">GitHub Pages</span>
+   
+   <div class="skills">
+  <!-- Frontend -->
+  <div class="skill-group">
+    <h4>Frontend</h4>
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">JavaScript</span>
+  </div>
+  <!-- Backend -->
+  <div class="skill-group">
+    <h4>Backend</h4>
+    <span class="skill-tag">Node.js</span>
+    <span class="skill-tag">Express.js</span>
+    <span class="skill-tag">REST APIs</span>
+  </div>
+  <!-- Backend as a Service -->
+  <div class="skill-group">
+    <h4>Backend Services (BaaS)</h4>
+    <span class="skill-tag">Supabase</span>
+  </div>
+  <!-- Databases -->
+  <div class="skill-group">
+    <h4>Databases</h4>
+    <span class="skill-tag">MongoDB</span>
+    <span class="skill-tag">PostgreSQL</span>
+  </div>
+  <!-- Deployment -->
+  <div class="skill-group">
+    <h4>Deployment</h4>
+    <span class="skill-tag">Vercel</span>
+    <span class="skill-tag">GitHub Pages</span>
+  </div>
+  <!-- Hosting -->
+  <div class="skill-group">
+    <h4>Domain & Hosting</h4>
+    <span class="skill-tag">Domain</span>
+    <span class="skill-tag">DNS</span>
+  </div>
+</div>
+   
     </div>
   </section>
 
@@ -327,30 +358,25 @@
   <h3 style="text-align: center;">My Projects</h3>
   <div class="project-grid" id="static-projects">
     <div class="card">
-      <h4>TON Blog</h4>
-      <p>The Open Network (TON) blockchain blog for beginners understanding.</p>
-      <button onclick="openSafe('ton.html')">View</button>
-    </div>
-    <div class="card">
       <h4>Kronos IT Support <span style="font-size:0.8rem;color:#bbb;">(Client Project)</span></h4>
       <p>A professional tech support website built for a client — clean UI and responsive design.</p>
       <button onclick="openSafe('https://kronositsupport.github.io/KronosITsupport/')">View Site</button>
     </div>
     <div class="card">
-      <h4>CSI News</h4>
-<p>A clean, modern mini-news platform delivering real-time updates on cryptocurrencies, global stocks, and market trends for smart investors.</p>
+      <h4>News</h4>
+      <p>A clean, modern mini-news platform focused on global and political events.</p>
       <button onclick="openSafe('https://web-devjoel.github.io/News/')">Visit Site</button>
     </div>
     <div class="card">
       <h4>Online School Portal <span style="font-size:0.8rem;color:#bbb;">(Student Results System)</span></h4>
       <p>A web-based results portal for students — allows entering or checking student results online.</p>
-      <button onclick="openSafe('https://online-school-portal.github.io/BPS/')">Visit Portal</button>
+     <button onclick="openSafe('https://campusoperatingsystem.com')">
+  Visit Portal
+</button>
     </div>
-    <!-- Loading Placeholder -->
     <div class="card" style="flex-direction:column; justify-content:center; align-items:center;">
       <div class="spinner"></div>
       <p style="margin-top:15px; color:#ccc;">More projects loading soon...</p>
-      <!-- GameFi P2E Arena moved here -->
       <div style="text-align:center; margin-top:10px;">
         <h4>GameFi P2E Arena</h4>
         <p style="color:#ccc;">A blockchain-based Play-to-Earn battle arena game with token rewards.</p>
@@ -363,13 +389,21 @@
     <h3>Contact Me</h3>
     <p>Have a project or idea in mind? Let's collaborate!</p>
     <div class="socials">
-      <a href="https://github.com/web-devjoel" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
-      <a href="mailto:joelomoemmanuel96@gmail.com"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
-    </div>
+  <a href="https://github.com/web-devjoel" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+  </a>
+
+  <a href="https://wa.me/2347048994402" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+  </a>
+
+  <a href="mailto:joelomoemmanuel965@gmail.com">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+  </a>
+</div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <script>
     window.onscroll = () => {
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -397,7 +431,7 @@
     document.querySelectorAll('[data-fade]').forEach(fader => appearOnScroll.observe(fader));
 
     const textElement = document.getElementById('typewriter');
-    const phrases = ["Full Stack Developer", "Mobile Builder", "UI/UX Enthusiast", "Onchain Developer"];
+    const phrases = ["Full Stack Developer", "Mobile Builder", "UI/UX Enthusiast"];
     let phraseIndex = 0, charIndex = 0, isDeleting = false, typeSpeed = 100;
 
     function type() {
